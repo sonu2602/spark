@@ -1,0 +1,13 @@
+wget https://raw.githubusercontent.com/sonu2602/spark/main/Spark_Hadoop.py 
+
+wget https://raw.githubusercontent.com/sonu2602/spark/main/friends.csv
+
+hdfs dfs -mkdir spark
+
+hdfs dfs -mkdir spark/job_output
+
+hdfs dfs -copyFromLocal Spark_Hadoop.py spark/Spark_Hadoop.py
+
+hdfs dfs -copyFromLocal friends.csv spark/friends.csv
+
+submit-spark Spark_Hadoop.py
