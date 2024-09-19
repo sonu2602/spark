@@ -1,0 +1,11 @@
+wget https://raw.githubusercontent.com/ash...
+
+wget https://raw.githubusercontent.com/ash...
+
+hdfs dfs -mkdir spark
+
+hdfs dfs -mkdir spark/job_output
+
+hdfs dfs -copyFromLocal Spark_Hadoop.py spark/Spark_Hadoop.py
+
+hdfs dfs -copyFromLocal friends.csv spark/friends.csv
