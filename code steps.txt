@@ -10,4 +10,4 @@ hdfs dfs -copyFromLocal Spark_Hadoop.py spark/Spark_Hadoop.py
 
 hdfs dfs -copyFromLocal friends.csv spark/friends.csv
 
-submit-spark Spark_Hadoop.py
+spark-submit Spark_Hadoop.py
